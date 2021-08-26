@@ -58,7 +58,7 @@ bib[journaltitle = "Journal of Geotechnical and Geoenvironmental Engineering"]
 bib[journaltitle = "International Journal of Geomechanics"]
 ```
 
-### More hydro/water related
+### More hydro/water related journals
 
 Included journals are:
 
@@ -80,7 +80,7 @@ bib[journaltitle = list(
     "Journal of Environmental Engineering")]
 ```
 
-### More structural/material related
+### More structural/material related journals
 
 Included journals are:
 
