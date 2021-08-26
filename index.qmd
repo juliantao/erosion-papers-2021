@@ -36,7 +36,7 @@ The following list of papers was created based on the search results on [ASCE li
 2. erosion
 4. erodibility
 
-The returned results are more than 1,000. I browsed the ranked lists based on relevance and selected around 60 papers which I feel are more of interests of our committee. The list is clearly incomplete and biased. So it is only intended to provide a reference for those who need it. 
+The returned results are more than 1,000 (some are duplicated). I browsed the ranked lists based on relevance and selected around 60 papers which I feel are more of interests of our committee. The list is clearly incomplete and biased. So it is only intended to provide a reference for those who need it. 
 
 Since it is based on searches, I believe some high quality papers were missing in the list. Therefore, **I invite you to send me the information of papers that deserve attention but not included in the list and I can then update it. ** It can and should be a community effort.
 
