@@ -5,6 +5,91 @@ format:
     toc: true
 ---
 
-# Test
+```{r, setup, include = FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+```
 
-Test page
+```{r ref}
+library(RefManageR)
+bib <- ReadBib("./GIErosion2021.bib")
+bib2 <- ReadBib("./conferences.bib", check = FALSE)
+myopts <- BibOptions(
+  bib.style = "authoryear",
+  style = "html",
+  first.inits = FALSE,
+  no.print.fields = list("url", "urldate"),
+  max.names = 20)
+
+```
+
+:::{.callout-note collapse="false"}
+
+This webpage is an attempt to provide ASCE GI Geotechnics of Erosion committee members a reference list of ASCE papers on scour/erosion which are published between July 2020 to July 2021. It is for internal use only. 
+
+:::
+
+
+## Journal of Geotechnical and Geoenvironmental Engineering 
+
+```{r, results = "asis"}
+bib[journaltitle = "Journal of Geotechnical and Geoenvironmental Engineering"]
+```
+
+
+## International Journal of Geomechanics 
+
+```{r, results = "asis"}
+bib[journaltitle = "International Journal of Geomechanics"]
+```
+
+## More hydro/water related
+
+Included journals are:
+
+* Journal of Hydraulic Engineering
+* Journal of Waterway, Port, Coastal, and Ocean Engineering 
+* Journal of Hydrologic Engineering
+* Journal of Irrigation and Drainage Engineering
+* Journal of Water Resources Planning and Management
+* Journal of Environmental Engineering
+
+
+
+
+
+```{r, results = "asis"}
+bib[journaltitle = list(
+    "Journal of Hydraulic Engineering",
+    "Journal of Waterway, Port, Coastal, and Ocean Engineering",
+    "Journal of Hydrologic Engineering",
+    "Journal of Irrigation and Drainage Engineering",
+    "Journal of Water Resources Planning and Management",
+    "Journal of Environmental Engineering")]
+```
+
+## More structural/material related
+
+Included journals are:
+
+* Journal of Engineering Mechanics
+* Journal of Materials in Civil Engineering
+* Journal of Bridge Engineering
+* Journal of Performance of Constructed Facilities
+* Natural Hazards Review
+
+```{r, results = "asis"}
+bib[journaltitle = list(
+"Journal of Engineering Mechanics",
+"Journal of Materials in Civil Engineering",
+"Journal of Bridge Engineering",
+"Journal of Performance of Constructed Facilities",
+"Natural Hazards Review"
+)]
+```
+
+## Other ASCE Conference proceedings
+
+```{r, results = "asis"}
+print(bib2, .opts = list(check.entries = FALSE))
+```
+
