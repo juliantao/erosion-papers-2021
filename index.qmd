@@ -1,8 +1,9 @@
 ---
-title: "Erosion Papers 2021"
+title: "ASCE Erosion Papers July 2020 -- June 2021"
 format:
   html:
     toc: true
+    toc-depth: 3
 ---
 
 ```{r, setup, include = FALSE}
@@ -15,34 +16,49 @@ bib <- ReadBib("./GIErosion2021.bib")
 bib2 <- ReadBib("./conferences.bib", check = FALSE)
 myopts <- BibOptions(
   bib.style = "authoryear",
-  style = "html",
+  style = "markdown",
   first.inits = FALSE,
   no.print.fields = list("url", "urldate"),
   max.names = 20)
 
 ```
 
+
 :::{.callout-note collapse="false"}
-
-This webpage is an attempt to provide ASCE GI Geotechnics of Erosion committee members a reference list of ASCE papers on scour/erosion which are published between July 2020 to July 2021. It is for internal use only. 
-
+This webpage is an attempt to provide ASCE GI Geotechnics of Erosion committee members a reference list of ASCE papers on scour/erosion which are published between July 2020 to June 2021. It is for internal use only. 
 :::
 
+## Introduction
 
-## Journal of Geotechnical and Geoenvironmental Engineering 
+The following list of papers was created based on the search results on [ASCE library](https://ascelibrary.org/). The "Advanced Search" mechanism was used and the publication date was limited to July 2020 to June 2021. The following keywords were used:
+
+1. scour 
+2. erosion
+4. erodibility
+
+The returned results are more than 1,000. I browsed the ranked lists based on relevance and selected around 60 papers which I feel are more of interests of our committee. The list is clearly incomplete and biased. So it is only intended to provide a reference for those who need it. 
+
+Since it is based on searches, I believe some high quality papers were missing in the list. Therefore, **I invite you to send me the information of papers that deserve attention but not included in the list and I can then update it. **
+
+To nominate a paper for the awards (including but not limited to Norman/Croes, and Middlebrooks), you can either email me via [jtao25 at asu.edu](), or submit your nomination **anonymously **using this [google form](https://forms.gle/Yb2ggyVsrCqmQgns9).
+
+The list of papers are organised based on the journals/conferences they appear. Use the right-hand side panel to navigate. 
+
+## List of publications
+
+### Journal of Geotechnical and Geoenvironmental Engineering 
 
 ```{r, results = "asis"}
 bib[journaltitle = "Journal of Geotechnical and Geoenvironmental Engineering"]
 ```
 
-
-## International Journal of Geomechanics 
+### International Journal of Geomechanics 
 
 ```{r, results = "asis"}
 bib[journaltitle = "International Journal of Geomechanics"]
 ```
 
-## More hydro/water related
+### More hydro/water related
 
 Included journals are:
 
@@ -52,9 +68,6 @@ Included journals are:
 * Journal of Irrigation and Drainage Engineering
 * Journal of Water Resources Planning and Management
 * Journal of Environmental Engineering
-
-
-
 
 
 ```{r, results = "asis"}
@@ -67,7 +80,7 @@ bib[journaltitle = list(
     "Journal of Environmental Engineering")]
 ```
 
-## More structural/material related
+### More structural/material related
 
 Included journals are:
 
@@ -87,7 +100,7 @@ bib[journaltitle = list(
 )]
 ```
 
-## Other ASCE Conference proceedings
+### Other ASCE Conference proceedings
 
 ```{r, results = "asis"}
 print(bib2, .opts = list(check.entries = FALSE))
